@@ -13,8 +13,47 @@ $badword = $_POST["badword"];
 $censured_par = str_replace($badword, '***', $paragraph);
 
 // CREA UN MARKUP BASILARE E STAMPA I VALORI DESIDERATI IN PAGINA
-echo "<h1>Original text:</h1>";
-echo "<p>$paragraph</p>";
-echo "<h4>The submitted text contains $paragraph_length characters.</h4>";
-echo "<h1>Censored text:</h1>";
-echo "<p>$censured_par</p>";
+// echo "<h1>Original text:</h1>";
+// echo "<p>$paragraph</p>";
+// echo "<h4>The submitted text contains $paragraph_length characters.</h4>";
+// echo "<h1>Censored text:</h1>";
+// echo "<p>$censured_par</p>";
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Badwords</title>
+
+    <!-- BS5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <h1>Original text:</h1>
+            <p><?php echo $paragraph ?></p>
+            <h4><?php echo "The submitted text contains $paragraph_length characters." ?></h4>
+            <h1>Censored text:</h1>
+
+            <p><?php echo $censured_par ?></p>
+
+            <a href="index.php" class="btn btn-success" style="width: fit-content">Back</a>
+
+        </div>
+    </div>
+
+</body>
+
+<!-- BS 5 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</html>
