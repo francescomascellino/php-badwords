@@ -1,3 +1,4 @@
+<!-- PHP CODE -->
 <?php
 
 // RICEVE I VALORI DEL FORM E LI ASSEGNA A DELLE VARIABILI
@@ -12,7 +13,7 @@ $badword = $_POST["badword"];
 // SOSTITUISCE IL VALORE DI $badword CON *** NELLA VARIABILE $paragraph E LO ASSEGNA ALLA VARIABILE $censured_par
 $censured_par = str_replace($badword, '***', $paragraph);
 
-// CREA UN MARKUP BASILARE E STAMPA I VALORI DESIDERATI IN PAGINA
+// OLD CODE FOR REFERENCE - CREA UN MARKUP BASILARE E STAMPA I VALORI DESIDERATI IN PAGINA
 // echo "<h1>Original text:</h1>";
 // echo "<p>$paragraph</p>";
 // echo "<h4>The submitted text contains $paragraph_length characters.</h4>";
@@ -21,6 +22,7 @@ $censured_par = str_replace($badword, '***', $paragraph);
 
 ?>
 
+<!-- HTML MARKUP -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,6 +43,7 @@ $censured_par = str_replace($badword, '***', $paragraph);
 
             <div class="col my-3">
 
+                <!-- STAMPA I VALORI DESIDERATI IN PAGINA -->
                 <h1 class="text-center">Original text:</h1>
                 <p><?php echo $paragraph ?></p>
                 <h6><?php echo "The submitted text contains $paragraph_length characters." ?></h6>
@@ -48,6 +51,7 @@ $censured_par = str_replace($badword, '***', $paragraph);
                 <h1 class="text-center">Censored text:</h1>
                 <p><?php echo $censured_par ?></p>
 
+                <!-- BACK TO FORM BUTTON -->
                 <a href="index.php" class="btn btn-success" style="width: fit-content">Back</a>
 
             </div>

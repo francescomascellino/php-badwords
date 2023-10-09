@@ -20,15 +20,18 @@
 
                 <h1 class="text-center">PHP BADWORDS</h1>
 
+                <!-- INDIRIZZA SU "script.php" CON METODO "post" -->
                 <form action="script.php" method="post">
 
                     <div class="my-3">
                         <label for="paragraph" class="form-label">Enter your text here</label>
+
                         <textarea class="form-control" name="paragraph" id="paragraph" cols="30" rows="10" placeholder="Write something...">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut perferendis impedit iste, molestiae inventore explicabo. Quae ab suscipit tempora itaque consequuntur soluta dolor repudiandae, modi natus, placeat veritatis. Architecto!</textarea>
                     </div>
 
                     <div class="my-3">
                         <label for="badword" class="form-label">Enter the word to censure from the text</label>
+
                         <input class="form-control" type="text" name="badword" id="badword" placeholder="Write here" value="Lorem">
                     </div>
 
