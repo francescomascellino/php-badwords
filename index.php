@@ -16,21 +16,29 @@
     <div class="container">
         <div class="row">
 
-            <form action="script.php" method="post">
+            <div class="col my-3">
 
-                <div class="my-3">
-                    <label for="paragraph" class="form-label">Enter your text here</label>
-                    <textarea class="form-control" name="paragraph" id="paragraph" cols="30" rows="10" placeholder="Write something...">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut perferendis impedit iste, molestiae inventore explicabo. Quae ab suscipit tempora itaque consequuntur soluta dolor repudiandae, modi natus, placeat veritatis. Architecto!</textarea>
-                </div>
+                <h1 class="text-center">PHP BADWORDS</h1>
 
-                <div class="my-3">
-                    <label for="badword" class="form-label">Enter the word to censure from the text</label>
-                    <input class="form-control" type="text" name="badword" id="badword" placeholder="Write here" value="Lorem">
-                </div>
+                <form action="script.php" method="post">
 
-                <input class="btn btn-success" type="submit" value="Send">
+                    <div class="my-3">
+                        <label for="paragraph" class="form-label">Enter your text here</label>
+                        <textarea class="form-control" name="paragraph" id="paragraph" cols="30" rows="10" placeholder="Write something...">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut perferendis impedit iste, molestiae inventore explicabo. Quae ab suscipit tempora itaque consequuntur soluta dolor repudiandae, modi natus, placeat veritatis. Architecto!</textarea>
+                    </div>
 
-            </form>
+                    <div class="my-3">
+                        <label for="badword" class="form-label">Enter the word to censure from the text</label>
+                        <input class="form-control" type="text" name="badword" id="badword" placeholder="Write here" value="Lorem">
+                    </div>
+
+                    <input class="btn btn-success" type="submit" value="Send">
+
+                </form>
+
+            </div>
+
+
 
         </div>
     </div>

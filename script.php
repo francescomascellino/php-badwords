@@ -39,14 +39,18 @@ $censured_par = str_replace($badword, '***', $paragraph);
     <div class="container">
         <div class="row">
 
-            <h1>Original text:</h1>
-            <p><?php echo $paragraph ?></p>
-            <h4><?php echo "The submitted text contains $paragraph_length characters." ?></h4>
-            <h1>Censored text:</h1>
+            <div class="col my-3">
 
-            <p><?php echo $censured_par ?></p>
+                <h1 class="text-center">Original text:</h1>
+                <p><?php echo $paragraph ?></p>
+                <h6><?php echo "The submitted text contains $paragraph_length characters." ?></h6>
 
-            <a href="index.php" class="btn btn-success" style="width: fit-content">Back</a>
+                <h1 class="text-center">Censored text:</h1>
+                <p><?php echo $censured_par ?></p>
+
+                <a href="index.php" class="btn btn-success" style="width: fit-content">Back</a>
+
+            </div>
 
         </div>
     </div>
